@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Mateusz Kij" />
+    <meta name="robots" content="all" />
+    <meta name="description" content="Mateusz Kij web" />
+    <meta name="keywords" content="Mateusz Kij" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/magnify.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mateusz Kij - Astronomy & testing</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h2 class="logo">Mateusz</h2>
+      </div>
+      <nav>
+        <ul class="nav-main">
+          <li><a class="nav-link" href="#">HOME</a></li>
+          <li><a class="nav-link" href="#">ABOUT</a></li>
+          <li><a class="nav-link" href="#">RESUME</a></li>
+          <li><a class="nav-link" href="#">PORTFOLIO</a></li>
+          <li><a class="nav-link" href="#">BLOG</a></li>
+          <li><a class="nav-link" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="ln-container">
+        <ul class="nav-langs">
+          <li><a class="nav-ln-link" href="#">PL</a></li>
+          <li><a class="nav-ln-link" href="#">EN</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="head-intro">
+        <h1>Featured works</h1>
+        <p class="header-context">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <section>
+        <div class="gallery">
+          <figure class="gallery-item-1">
+            <img
+              src="/img/img1.png"
+              class="gallery-img"
+              data-magnify-src="/img/img1.png"
+              alt="Image 1"
+            />
+          </figure>
+          <figure class="gallery-item-2">
+            <img
+              src="/img/img2.png"
+              class="gallery-img"
+              data-magnify-src="/img/img2.png"
+              alt="Image 2"
+            />
+          </figure>
+          <figure class="gallery-item-3">
+            <img
+              src="/img/img3.jpg"
+              class="gallery-img"
+              data-magnify-src="/img/img3.png"
+              alt="Image 3"
+            />
+          </figure>
+          <figure class="gallery-item-4">
+            <img
+              src="/img/img4.png"
+              class="gallery-img"
+              data-magnify-src="/img/img4.png"
+              alt="Image 4"
+            />
+          </figure>
+          <figure class="gallery-item-5">
+            <img
+              src="/img/img5.png"
+              class="gallery-img"
+              data-magnify-src="/img/img5.png"
+              alt="Image 5"
+            />
+          </figure>
+        </div>
+      </section>
+      <div class="cta-bottom">
+        <button class="cta-blue">SEE MORE</button>
+      </div>
+    </main>
+    <footer>
+      <strong>Mateusz Kij</strong>
+      <p>All rights reserved.</p>
+      <span id="date"></span>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="/js/jquery.magnify.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".gallery-img").magnify();
+      });
+    </script>
+  </body>
+</html>
