@@ -49,6 +49,10 @@ nav {
   color: #53525e;
 }
 
+main {
+  z-index: 1;
+}
+
 .ln-container {
   flex: 1;
   font-size: 12px;
@@ -178,6 +182,22 @@ a.nav-ln-link:hover {
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
+}
+
+a.link-blue:link {
+  color: #e5e5e5;
+}
+
+a.link-blue:visited {
+  color: #e5e5e5;
+}
+
+a.link-gray:link {
+  color: #e5e5e5;
+}
+
+a.link-gray:visited {
+  color: #e5e5e5;
 }
 
 /*
@@ -408,6 +428,18 @@ h1 {
   margin-left: 25%;
 }
 
+.education-header,
+.experience-header {
+  display: flex;
+}
+
+.education-header img,
+.experience-header img {
+  width: 32px;
+  height: 32px;
+  margin-right: 22px;
+}
+
 .resume-box {
   color: #323239;
   margin-left: -180px;
@@ -452,9 +484,14 @@ h1 {
   margin-left: -180px;
   background: #edf1fd;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
-  padding: 100px 33px 40px 33px;
-  height: 350px;
+  padding: 15px 33px 40px 33px;
+  height: 420px;
   position: relative;
+}
+
+.testimonial-quote {
+  margin-left: 300px;
+  margin-bottom: 12px;
 }
 
 .testimonial-info {
@@ -485,6 +522,12 @@ h1 {
   line-height: 27px;
   margin-left: 90px;
   margin-right: 32px;
+}
+
+.testimonial-author-img {
+  position: absolute;
+  top: 10px;
+  margin-bottom: 20px;
 }
 
 .gallery {
@@ -539,7 +582,7 @@ h1 {
 
 .cta-bottom {
   margin-left: 47.5%;
-  margin-bottom: 100px;;
+  margin-bottom: 100px;
 }
 
 .blog {
@@ -693,7 +736,7 @@ h1 {
 }
 
 .user-box span {
-  color: #2E79BE;
+  color: #2e79be;
   font-weight: 500;
 }
 
@@ -712,15 +755,15 @@ h1 {
 }
 
 footer {
+  z-index: -1;
   position: fixed;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #323239;
+  color: #bfb7b7;
   font-size: 12px;
   font-weight: 500;
   bottom: 0;
-  background-color: #E8EAF1;
   width: 100%;
 }
 
